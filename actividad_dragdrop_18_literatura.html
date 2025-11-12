@@ -1,0 +1,269 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Actividad: ordenar cajas (Literatura en ELE) — 18 items</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;padding:18px;background:#f6f7fb;color:#111}
+  h1{font-size:20px;margin-bottom:6px}
+  p.small{color:#555;margin-top:0}
+  .wrap{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+  .table-wrap{flex:1 1 720px}
+  table{border-collapse:collapse;width:100%;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(20,20,40,.06)}
+  th,td{padding:10px 12px;border-bottom:1px solid #eee;vertical-align:top}
+  th{background:#fafafa;text-align:left;font-weight:600}
+  td.target{min-width:300px;background:#fafafa}
+  .palette{width:360px;min-height:240px;background:#fff;border-radius:8px;padding:12px;box-shadow:0 6px 18px rgba(20,20,40,.04);flex:0 0 360px}
+  .draggable{background:#e6e7ea;padding:10px;margin:8px 6px;border-radius:6px;cursor:grab;border:1px solid #d7d8db;user-select:none}
+  .draggable.dragging{opacity:0.6}
+  .cell-drop{min-height:56px;padding:6px;border-radius:6px;border:2px dashed transparent;display:flex;gap:6px;align-items:center}
+  .cell-drop.has-item{border-style:solid}
+  .correct{background:#e6ffef;border-color:#32a852}
+  .incorrect{background:#ffecec;border-color:#d64545}
+  .controls{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+  button{padding:8px 12px;border-radius:6px;border:0;background:#1b73e8;color:#fff;cursor:pointer}
+  button.secondary{background:#6c757d}
+  #result{margin-top:12px;font-weight:600}
+  ul.wrong-list{margin:8px 0 0 18px;color:#c33}
+  @media (max-width:980px){
+    .wrap{flex-direction:column}
+    .palette{width:100%}
+    .table-wrap{width:100%}
+  }
+</style>
+</head>
+<body>
+<h1>Actividad: ordenar las cajas grises (18 items)</h1>
+<p class="small">Arrastra cada caja gris desde la paleta hacia la fila correcta (tercera columna). Cuando termines, pulsa "Comprobar respuestas" para ver tu puntuación y qué elementos están incorrectos.</p>
+
+<div class="wrap">
+  <div class="table-wrap">
+    <table id="mainTable" aria-label="Tabla de actividad">
+      <thead>
+        <tr><th style="width:220px">Competencia</th><th style="width:220px">Área DigCompEdu</th><th>Coloca aquí la aplicación</th></tr>
+      </thead>
+      <tbody>
+        <tr data-answer="Planificar una secuencia literaria multimodal (lectura + interacción + producción creativa + mediación)">
+          <td>Planificación y programación</td><td>Enseñanza y aprendizaje</td><td class="target"><div class="cell-drop" data-row="0"></div></td>
+        </tr>
+        <tr data-answer="Seleccionar fragmentos digitales abiertos (dominio público) y recursos didácticos interactivos">
+          <td>Recursos digitales</td><td>—</td><td class="target"><div class="cell-drop" data-row="1"></div></td>
+        </tr>
+        <tr data-answer="Incluir rúbricas digitales con criterios literarios (perspectiva, elementos narrativos…)">
+          <td>Evaluación</td><td>—</td><td class="target"><div class="cell-drop" data-row="2"></div></td>
+        </tr>
+        <tr data-answer="Aprendizaje colaborativo mediante foros virtuales sobre debates literarios.">
+          <td>Gestión del aula (interacción y dinámica)</td><td>Enseñanza y aprendizaje</td><td class="target"><div class="cell-drop" data-row="3"></div></td>
+        </tr>
+        <tr data-answer="Elección de tareas: booktrailer, podcast literario, club digital de lectura.">
+          <td>Empoderamiento del estudiantado</td><td>—</td><td class="target"><div class="cell-drop" data-row="4"></div></td>
+        </tr>
+        <tr data-answer="Crear H5P/ Genially sobre interpretación de textos y mediación literaria">
+          <td>Actividades/formas de aprendizaje</td><td>Recursos digitales (creación)</td><td class="target"><div class="cell-drop" data-row="5"></div></td>
+        </tr>
+        <tr data-answer="Monitorizar progreso de la persona lectora y participación crítica con herramientas de análisis (ej.: seguimiento de participación en foros).">
+          <td>Evaluación (Analítica del aprendizaje)</td><td>—</td><td class="target"><div class="cell-drop" data-row="6"></div></td>
+        </tr>
+        <tr data-answer="Cuestionarios automáticos de comprensión literaria; retroalimentación digital (audio/vídeo).">
+          <td>Facilitación de la competencia digital del estudiantado</td><td>Evaluación</td><td class="target"><div class="cell-drop" data-row="7"></div></td>
+        </tr>
+        <tr data-answer="Tareas de mediación literaria: explicar un texto a compañeros/as con menor nivel.">
+          <td>Enseñanza y aprendizaje</td><td>—</td><td class="target"><div class="cell-drop" data-row="8"></div></td>
+        </tr>
+        <tr data-answer="Comparaciones interculturales de textos (España AL/otras culturas).">
+          <td>Desarrollo de la competencia pluricultural</td><td>Empoderamiento del estudiantado</td><td class="target"><div class="cell-drop" data-row="9"></div></td>
+        </tr>
+        <tr data-answer="Comunidades de práctica literaria en línea (Padlet, foros docentes, repositorios)">
+          <td>Desarrollo profesional docente</td><td>Compromiso profesional</td><td class="target"><div class="cell-drop" data-row="10"></div></td>
+        </tr>
+        <tr data-answer="Co-diseñar actividades literarias entre el profesorado vía documentos colaborativos">
+          <td>Colaboración profesional</td><td>—</td><td class="target"><div class="cell-drop" data-row="11"></div></td>
+        </tr>
+        <tr data-answer="Debates digitales sobre representación cultural, valores, diversidad en textos literarios">
+          <td>Ética y cultura del lenguaje</td><td>Empoderamiento del estudiantado</td><td class="target"><div class="cell-drop" data-row="12"></div></td>
+        </tr>
+        <tr data-answer="Labor crítica: distinguir fuentes fiables sobre autores, contexto histórico.">
+          <td>Facilitación de la competencia digital del estudiantado</td><td>—</td><td class="target"><div class="cell-drop" data-row="13"></div></td>
+        </tr>
+        <tr data-answer="Audiolibros como apoyo a prosodia; lectura dramatizada grabada por el alumnado.">
+          <td>Competencia lingüística y comunicativa en lengua meta</td><td>Recursos digitales</td><td class="target"><div class="cell-drop" data-row="14"></div></td>
+        </tr>
+        <tr data-answer="Difusión de proyectos literarios en comunidades educativas digitales.">
+          <td>Desarrollo profesional</td><td>Compromiso profesional</td><td class="target"><div class="cell-drop" data-row="15"></div></td>
+        </tr>
+        <tr data-answer="Coevaluación mediante rúbricas compartidas: interpretación simbólica, adecuación textual, etc.">
+          <td>Enseñanza y aprendizaje</td><td>—</td><td class="target"><div class="cell-drop" data-row="16"></div></td>
+        </tr>
+        <tr data-answer="Trabajar la alfabetización digital a través del análisis de formatos textuales (texto, audio, vídeo literario).">
+          <td>Facilitación de la competencia digital del estudiantado</td><td>—</td><td class="target"><div class="cell-drop" data-row="17"></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="palette" aria-label="Paleta de respuestas (arrastrables)">
+    <strong>Paleta (arrastrar)</strong>
+    <div id="paletteItems" style="margin-top:8px;display:flex;flex-direction:column"></div>
+
+    <div class="controls">
+      <button id="shuffleBtn" class="secondary">Barajar</button>
+      <button id="checkBtn">Comprobar respuestas</button>
+      <button id="resetBtn" class="secondary">Reiniciar</button>
+    </div>
+
+    <div id="result" role="status" aria-live="polite"></div>
+  </div>
+</div>
+
+<script>
+const answers = Array.from(document.querySelectorAll('#mainTable tbody tr')).map((tr,i)=>({
+  text: tr.getAttribute('data-answer'),
+  row: i
+}));
+
+const palette = document.getElementById('paletteItems');
+
+function createItem(text, id){
+  const d = document.createElement('div');
+  d.className = 'draggable';
+  d.draggable = true;
+  d.id = 'itm-'+id;
+  d.innerText = text;
+  d.setAttribute('data-text', text);
+  d.addEventListener('dragstart', onDragStart);
+  d.addEventListener('dragend', onDragEnd);
+  return d;
+}
+
+function shuffleArray(a){
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]] = [a[j],a[i]];
+  }
+}
+
+function populatePalette(){
+  palette.innerHTML = '';
+  const copy = answers.map(a=>a.text);
+  shuffleArray(copy);
+  copy.forEach((txt, idx)=>{
+    palette.appendChild(createItem(txt, idx));
+  });
+}
+populatePalette();
+
+// drag-drop handlers
+let dragged = null;
+function onDragStart(e){
+  dragged = this;
+  this.classList.add('dragging');
+  e.dataTransfer.setData('text/plain', this.id);
+  e.dataTransfer.effectAllowed = 'move';
+}
+function onDragEnd(){
+  if(this) this.classList.remove('dragging');
+  dragged = null;
+}
+
+const drops = document.querySelectorAll('.cell-drop');
+drops.forEach(d=>{
+  d.addEventListener('dragover', e=>{ e.preventDefault(); e.dataTransfer.dropEffect = 'move'; d.classList.add('over');});
+  d.addEventListener('dragleave', e=>{ d.classList.remove('over');});
+  d.addEventListener('drop', e=>{
+    e.preventDefault();
+    d.classList.remove('over');
+    const id = e.dataTransfer.getData('text/plain');
+    const el = document.getElementById(id);
+    if(!el) return;
+    // if this drop already has child, return it to palette
+    if(d.firstChild){
+      palette.appendChild(d.firstChild);
+    }
+    d.appendChild(el);
+    d.classList.add('has-item');
+  });
+});
+
+// allow dragging back to palette
+palette.addEventListener('dragover', e=>{ e.preventDefault(); });
+palette.addEventListener('drop', e=>{
+  e.preventDefault();
+  const id = e.dataTransfer.getData('text/plain');
+  const el = document.getElementById(id);
+  if(!el) return;
+  palette.appendChild(el);
+});
+
+// check answers
+document.getElementById('checkBtn').addEventListener('click', ()=>{
+  let correct = 0;
+  const wrong = [];
+  drops.forEach((d, i)=>{
+    const parentRow = document.querySelectorAll('#mainTable tbody tr')[i];
+    const expected = parentRow.getAttribute('data-answer').trim();
+    const child = d.firstChild;
+    // reset classes
+    d.classList.remove('correct','incorrect');
+    if(child){
+      const given = child.getAttribute('data-text').trim();
+      if(given === expected){
+        correct++;
+        d.classList.add('correct');
+      } else {
+        d.classList.add('incorrect');
+        wrong.push({row:i+1, expected: expected, given: given});
+      }
+    } else {
+      d.classList.add('incorrect');
+      wrong.push({row:i+1, expected: expected, given: null});
+    }
+  });
+
+  const total = drops.length;
+  const result = document.getElementById('result');
+  result.innerText = `Puntuación: ${correct} / ${total}`;
+  // show list of wrong
+  const prev = document.querySelector('.wrong-list');
+  if(prev) prev.remove();
+  if(wrong.length){
+    const ul = document.createElement('ul');
+    ul.className = 'wrong-list';
+    wrong.forEach(w=>{
+      const li = document.createElement('li');
+      li.innerHTML = `Fila ${w.row}: <strong>Correcto:</strong> ${escapeHtml(w.expected)} ${w.given?(`<strong> — Tu respuesta:</strong> ${escapeHtml(w.given)}`):'<strong> — Tu respuesta:</strong> (vacío)>'}`;
+      ul.appendChild(li);
+    });
+    result.insertAdjacentElement('afterend', ul);
+  }
+});
+
+// helpers
+function escapeHtml(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+document.getElementById('shuffleBtn').addEventListener('click', ()=>{
+  // move any placed items back to palette
+  drops.forEach(d=>{ if(d.firstChild) palette.appendChild(d.firstChild); d.classList.remove('has-item','correct','incorrect'); });
+  // repopulate palette shuffled
+  populatePalette();
+  document.getElementById('result').innerText = '';
+  const prev = document.querySelector('.wrong-list'); if(prev) prev.remove();
+});
+
+document.getElementById('resetBtn').addEventListener('click', ()=>{
+  // clear palette and place all back
+  drops.forEach(d=>{ if(d.firstChild) palette.appendChild(d.firstChild); d.classList.remove('has-item','correct','incorrect'); });
+  // ensure all items present
+  const present = Array.from(palette.children).map(n=>n.getAttribute('data-text'));
+  answers.forEach(a=>{
+    if(!present.includes(a.text)){
+      palette.appendChild(createItem(a.text, Math.random().toString(36).slice(2)));
+    }
+  });
+  document.getElementById('result').innerText = '';
+  const prev = document.querySelector('.wrong-list'); if(prev) prev.remove();
+});
+</script>
+</body>
+</html>
